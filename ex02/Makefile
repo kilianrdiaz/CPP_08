@@ -9,6 +9,8 @@ OBJ_DIR = obj
 
 SRCS    = main.cpp
 
+INCS	= $(INC_DIR)/MutantStack.hpp
+
 OBJS    = $(patsubst %.cpp, $(OBJ_DIR)/%.o, $(SRCS))
 
 all: $(NAME)
