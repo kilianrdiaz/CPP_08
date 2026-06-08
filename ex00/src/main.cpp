@@ -22,7 +22,8 @@ int main()
         std::cout << "Found in list: " << *itLst << std::endl;
 
         // This will throw an exception
-        easyfind(vec, 6);
+        std::vector<int>::iterator itVec2 = easyfind(vec, 6);
+        std::cout << "Found in vector: " << *itVec2 << std::endl;
     } catch (const std::out_of_range &e) {
         std::cerr << e.what() << std::endl;
     }

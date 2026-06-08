@@ -10,6 +10,8 @@ int main()
 
     try
     {
+        std::cout << ">> Subject test <<" << std::endl;
+
         Span sp(5);
         sp.addNumber(6);
         sp.addNumber(3);
@@ -32,6 +34,7 @@ int main()
 
     try
     {
+        std::cout << "\n>> Large span test <<" << std::endl;
         Span sp3(10000);
         std::vector<int> bigVec2;
         for (int i = 0; i < 10000; i++)
@@ -50,6 +53,8 @@ int main()
 
     try
     {
+        std::cout << "\n>> Empty span test <<" << std::endl;
+
         Span emptySpan(5);
         int result = emptySpan.shortestSpan();
         std::cout << "Shortest span: " << result << std::endl;
@@ -61,6 +66,8 @@ int main()
 
     try
     {
+        std::cout << "\n>> Single element span test <<" << std::endl;
+        
         Span singleSpan(5);
         singleSpan.addNumber(42);
         int result = singleSpan.shortestSpan();
